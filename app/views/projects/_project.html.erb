@@ -1,7 +1,7 @@
 <div id="<%= dom_id project %>" class='col'>
   <div class='item-card'>
         <div class='item-card-image'>
-            <%= image_tag portfolio_img("#{project.thumbnail}"), class: 'item-card-image' %>
+            <%= image_tag "#{project.thumbnail}", class: 'item-card-image' %>
         </div>
         <div class='item-card-content'>
             <h3 class='item-card-title'><%= project.title %></h3>
