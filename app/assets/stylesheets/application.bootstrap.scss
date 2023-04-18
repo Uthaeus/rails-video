@@ -1,2 +1,9 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #161616;
+    color: #fff;
+}

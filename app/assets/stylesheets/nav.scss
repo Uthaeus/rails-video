@@ -1,0 +1,21 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #121212;
+    color: #888888;
+    border-bottom: 1px solid #222222;
+    box-shadow: 1px 1px 1px #000000;
+
+    a {
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            color: #517ce7;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="nav-container">
+    <div>
+    
+    </div>
+    <div>
+        <%= link_to "Home", root_path %>
+        <%= link_to "About", about_path %>
+        <%= link_to "Contact", contact_path %>
+    <div>
+    <div>
+        <% if logged_in?(:site_admin) %>
+            <%= button_to 'Logout', destroy_user_session_path, methog: :delete %>
+        <% else %>
+            <%= link_to 'Login', new_user_session_path %>
+        <% end %>
+    </div>
+</div>
