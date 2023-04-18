@@ -9,3 +9,16 @@ body {
     background-color: #161616;
     color: #fff;
 }
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e21;
+    border: 1px solid #2e2e2e62;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}

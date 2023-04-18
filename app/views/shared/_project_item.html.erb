@@ -1,0 +1,11 @@
+<div class='col'>
+    <div class='item-card'>
+        <div class='item-card-image'>
+            <%= image_tag project.thumbnail, class: 'item-card-image' %>
+        </div>
+        <div class='item-card-content'>
+            <h3 class='item-card-title'><%= project.title %></h3>
+            <p class='item-card-link'><%= link_to 'View Project', project_path(project) %></p>
+        </div>
+    </div>
+</div>
