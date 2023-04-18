@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :projects
-  get 'pages/home'
-  get 'pages/about'
-  get 'pages/contact'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+  
+  root 'pages#home'
 end
