@@ -185,21 +185,77 @@ body {
         color: #157a99;
     }
 
+    
+}
+
+.project-show-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .project-show-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        .show-video-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            min-height: calc(100vh - 100px);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .show-description-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            h2 {
+                font-size: 2em;
+                font-weight: 700;
+                color: #157a99;
+                margin: 40px 0;
+            }
+
+            p {
+                font-size: 1.2em;
+                font-weight: 500;
+                color: #3b5e69;
+                margin: 20px;
+            }
+        }
+    }
+
     .actions-wrapper {
-        display: inline-block;
+        display: flex;
+        position: absolute;
+        bottom: 0;
 
         a {
             text-decoration: none;
             margin: 10px 20px;
-            color: #404f54;
+            color: #157a99;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: 1px solid #404f54;
+            }
+        }
+
+        button {
+            margin: 10px 20px;
+            background-color: red;
+            color: white;
             transition: 0.3s ease-in-out;
 
             &:hover {
                 cursor: pointer;
                 opacity: 0.5;
-                border-bottom: 1px solid #157a99;
             }
         }
     }
 }
-

@@ -1,15 +1,25 @@
 <div class='project-container'>  
   <p style="color: green"><%= notice %></p>
 
-  <%= render @project %>
+  <div class='project-show-container'>
+    <div class='project-show-wrapper'>
+      <div class='show-video-wrapper'>
+        <iframe width="560" height="315" src="<%= @project.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class='show-description-wrapper'>
+        <h2><%= @project.title %></h2>
+        <hr>
+        <p><%= @project.description %></p>
+    </div>
 
-  <div class='actions-wrapper'>
-    <% if logged_in?(:site_admin) %>
-      <%= link_to "Edit this project", edit_project_path(@project) %>
-      <%= button_to "Destroy this project", @project, method: :delete %>
-    <% end %>
-    
-    <%= link_to "Back to projects", projects_path %>
-    <%= link_to "Back to Home", root_path %>
+    <div class='actions-wrapper'>
+      <%= link_to "Back to projects", projects_path %>
+      <%= link_to "Back to Home", root_path %>
+
+      <% if logged_in?(:site_admin) %>
+        <%= link_to "Edit this project", edit_project_path(@project) %>
+        <%= button_to "Destroy this project", @project, method: :delete %>
+      <% end %>
+    </div>
   </div>
 </div>

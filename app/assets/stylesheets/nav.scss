@@ -29,15 +29,18 @@
             color: #e7d651;
         }
     }
-}
 
-.logout-btn {
-    color: #888888;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
+    .logout-btn {
+        text-decoration: none;
+        color: #c9cd7d;
+        border: none;
+        background-color: transparent;
+        transition: 0.3s ease-in-out;
 
-    &:hover {
-        cursor: pointer;
-        color: #517ce7;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
     }
 }
+
