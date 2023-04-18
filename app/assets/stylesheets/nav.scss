@@ -4,7 +4,11 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    padding: 10px 1rem;
+    padding: 10px 2rem;
+
+    .nav-head {
+        margin-bottom: 4rem;
+    }
 
     .links-wrapper {
         display: flex;
@@ -16,13 +20,13 @@
     a {
         margin: 20px 0;
         font-size: 1.2rem;
-        color: #888888;
+        color: #c9cd7d;
         text-decoration: none;
         transition: 0.3s ease-in-out;
 
         &:hover {
             cursor: pointer;
-            color: #517ce7;
+            color: #e7d651;
         }
     }
 }

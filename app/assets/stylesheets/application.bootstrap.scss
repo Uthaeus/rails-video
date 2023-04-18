@@ -130,11 +130,13 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 
     .contact-info-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         padding: 20px;
         margin: 20px;
@@ -143,12 +145,14 @@ body {
             font-size: 2em;
             font-weight: 700;
             color: #157a99;
+            margin: 20px 0;
         }
 
         p {
             font-size: 1.2em;
             font-weight: 500;
             color: #3b5e69;
+            margin: 20px;
         }
 
         a {
