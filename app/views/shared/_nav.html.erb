@@ -1,14 +1,14 @@
 
-<div class='col'>
+<div class=''>
     <%= link_to "My Portfolio", root_path %>
 </div>
-<div class='col'>
+<div class='links-wrapper'>
     <%= link_to "Home", root_path %>
     <%= link_to "About", about_path %>
     <%= link_to "Contact", contact_path %>
     <%= link_to "Projects", projects_path %>
 </div>
-<div class='col text-end'>
+<div class=''>
     <% if logged_in?(:site_admin) %>
         <%= button_to 'Logout', destroy_user_session_path, methog: :delete, class: 'logout-btn' %>
     <% else %>
