@@ -174,3 +174,32 @@ body {
     }
 }
 
+.project-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+
+    h1 {
+        font-size: 3em;
+        font-weight: 700;
+        color: #157a99;
+    }
+
+    .actions-wrapper {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            margin: 10px 20px;
+            color: #404f54;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+                border-bottom: 1px solid #157a99;
+            }
+        }
+    }
+}
+
