@@ -1,15 +1,14 @@
 .nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
+    width: 100%;
+    padding: 10px 1rem;
     background-color: #121212;
-    color: #888888;
     border-bottom: 1px solid #222222;
     box-shadow: 1px 1px 1px #000000;
 
     a {
+        margin: 0 20px;
+        font-size: 1.2rem;
+        color: #888888;
         text-decoration: none;
         transition: 0.3s ease-in-out;
 
@@ -17,5 +16,16 @@
             cursor: pointer;
             color: #517ce7;
         }
+    }
+}
+
+.logout-btn {
+    color: #888888;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: #517ce7;
     }
 }
