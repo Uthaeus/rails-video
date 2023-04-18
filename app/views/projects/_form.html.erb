@@ -1,37 +1,41 @@
-<%= form_with(model: project) do |form| %>
-  <% if project.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+<div class='project-form-container'>
+  
+  <%= form_with(model: project) do |form| %>
+    <% if project.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
 
-      <ul>
-        <% project.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+        <ul>
+          <% project.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class='project-form-card'>
+      <div class='form-group'>
+        <%= form.label :title, style: "display: block" %>
+        <%= form.text_field :title, class: 'form-control form-input' %>
+      </div>
+
+      <div class='form-group'>
+        <%= form.label :description, style: "display: block" %>
+        <%= form.text_area :description, rows: 6, class: 'form-control form-input' %>
+      </div>
+
+      <div class='form-group'>
+        <%= form.label :video_url, style: "display: block" %>
+        <%= form.text_field :video_url, class: 'form-control form-input' %>
+      </div>
+
+      <div class='form-group'>
+        <%= form.label :thumbnail, style: "display: block" %>
+        <%= form.file_field :thumbnail, :image, class: 'form-control' %>
+      </div>
+
+      <div class='btn-wrapper'>
+        <%= form.submit %>
+      </div>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div>
-    <%= form.label :thumbnail, style: "display: block" %>
-    <%= form.text_field :thumbnail %>
-  </div>
-
-  <div>
-    <%= form.label :video_url, style: "display: block" %>
-    <%= form.text_field :video_url %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>
