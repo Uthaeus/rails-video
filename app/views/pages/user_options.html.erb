@@ -1,0 +1,11 @@
+<div class='user-options-container'>
+    <div class='user-options-menu'>
+        
+        <%= link_to "Forgot your password?", new_user_password_path, class: 'user-options-link' %>
+
+        <% if logged_in?(:site_admin) %>
+            <%= link_to "Change your password", edit_user_password_path, class: 'user-options-link' %>
+            <%= link_to "Edit your profile", edit_user_registration_path, class: 'user-options-link' %>
+        <% end %>
+    </div>
+</div>

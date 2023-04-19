@@ -2,6 +2,7 @@
 @import 'bootstrap-icons/font/bootstrap-icons';
 
 @import 'nav';
+@import 'user_options';
 
 body {
     width: 100%;
@@ -44,6 +45,25 @@ body {
     padding: 10px;
     margin: 30px 10px;
     width: 80%;
+
+    .item-card-content {
+        padding: 15px 0;
+
+        a {
+            text-decoration: none;
+            color: #157a99;
+            margin: 15px 0;
+            transition: 0.3s ease-in-out;
+    
+            &:hover {
+                cursor: pointer;
+                color: #404f54;
+                border-bottom: 2px solid #404f54;
+            }
+        }
+    }
+
+    
 }
 
 .login-container {
