@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @projects = Project.all.order("created_at DESC")
+    @projects = Project.published.order("created_at DESC")
   end
 
   def about

@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :set_project, only: %i[ show edit update destroy ]
+  before_action :set_project, only: %i[ show edit update destroy toggle_status ]
 
   # GET /projects or /projects.json
   def index
@@ -17,6 +17,16 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1/edit
   def edit
+  end
+
+  def toggle_status
+    if @project.draft?
+      @project.published!
+    elsif @project.published?
+      @project.draft!
+    end
+
+    redirect_to project_url(@project), notice: "Status was successfully updated."
   end
 
   # POST /projects or /projects.json

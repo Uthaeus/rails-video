@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_19_025722) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_19_154812) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_19_025722) do
     t.string "video_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "status", default: 0
   end
 
   create_table "users", force: :cascade do |t|

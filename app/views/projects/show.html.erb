@@ -8,6 +8,9 @@
       </div>
       <div class='show-description-wrapper'>
         <h2><%= @project.title %></h2>
+        <% if logged_in?(:site_admin) %>
+          <p><%= link_to @project.status, toggle_status_project_path(@project) %></p>
+        <% end %>
         <hr>
         <p><%= @project.description %></p>
     </div>
