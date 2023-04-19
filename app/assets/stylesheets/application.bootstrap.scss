@@ -11,6 +11,7 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    font-family: 'EB Garamond', serif;
 }
 
 .home-mast {
@@ -39,14 +40,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #3b3a3a21;
-    border: 1px solid #39383862;
-    border-radius: 12px;
+    // background-color: #3b3a3a21;
+    // border: 1px solid #39383862;
+    // border-radius: 12px;
+    border-bottom: 2px solid #39383862;
     padding: 10px;
     margin: 30px 10px;
     width: 80%;
 
     .item-card-content {
+        width: 100%;
         padding: 15px 0;
 
         a {
@@ -162,10 +165,14 @@ body {
         margin: 20px;
 
         h1 {
-            font-size: 2em;
+            font-size: 1.7em;
             font-weight: 700;
             color: #157a99;
             margin: 20px 0;
+        }
+
+        h3 {
+            color: #3b5e69;
         }
 
         p {

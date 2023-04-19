@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get 'user_options', to: 'pages#user_options'
   
   root 'pages#home'
+  match "*path" => redirect("/"), via: :get
 end
