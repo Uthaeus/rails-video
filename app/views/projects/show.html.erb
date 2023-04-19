@@ -4,7 +4,9 @@
   <div class='project-show-container'>
     <div class='project-show-wrapper'>
       <div class='show-video-wrapper'>
-        <iframe width="560" height="315" src="<%= @project.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video controls width="600" height="450">
+          <source src="<%= @project.video_url %>" type="video/mp4">
+        </video>
       </div>
       <div class='show-description-wrapper'>
         <h2><%= @project.title %></h2>
