@@ -38,10 +38,10 @@
         <%= f.submit "Update", class: 'form-btn' %>
       </div>
     <% end %>
+    <%= link_to "Back Home", root_path %>
+    <% if logged_in?(:site_admin) %>
+      <%= render "devise/shared/links" %>
+    <% end %>
   </div>
-  <%= link_to "Back Home", root_path %>
-  <% if logged_in?(:site_admin) %>
-    <%= render "devise/shared/links" %>
-  <% end %>
 </div>
 

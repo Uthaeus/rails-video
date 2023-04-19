@@ -15,11 +15,10 @@
         <%= f.submit "Send me reset password instructions", class: 'form-btn' %>
       </div>
     <% end %>
-  </div>
-
     <%= link_to "Back Home", root_path %>
-  <% if logged_in?(:site_admin) %>
-    <%= render "devise/shared/links" %>
-  <% end %>
+    <% if logged_in?(:site_admin) %>
+      <%= render "devise/shared/links" %>
+    <% end %>
+  </div>
 </div>
 
