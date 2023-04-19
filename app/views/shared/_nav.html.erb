@@ -9,9 +9,9 @@
     <%= link_to "Projects", projects_path %>
     <%= link_to "User", user_options_path %>
 </div>
-<div class=''>
+<div class='auth-actions'>
     <% if logged_in?(:site_admin) %>
-        <%= button_to 'Logout', destroy_user_session_path, methog: :delete, class: 'logout-btn' %>
+        <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: 'logout-btn' %>
     <% else %>
         <%= link_to 'Login', new_user_session_path %>
     <% end %>
