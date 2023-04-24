@@ -1,6 +1,6 @@
 databases:
   - name: video_editing_db
-    plan: free
+    plan: starter
     ipAllowList: []
       
 
