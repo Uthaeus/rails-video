@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: rails_video_production
   username: rails_video
   password: <%= ENV["RAILS_VIDEO_DATABASE_PASSWORD"] %>
