@@ -9,13 +9,4 @@ end
 
 puts "6 projects created"
 
-1.times do |i|
-    User.create!(
-        email: "test@test.com",
-        password: "foobar",
-        password_confirmation: "foobar",
-        role: "site_admin"
-    )
-end
-
-puts "1 user created"
+puts "no user created"

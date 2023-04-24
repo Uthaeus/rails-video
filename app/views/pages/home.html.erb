@@ -3,6 +3,9 @@
     <div class='home-mast'>
         <h1>Colin's Video Editing Portfolio</h1>
         <hr>
+        <% if @user_check %>
+            <%= link_to 'Sign up', new_user_registration_path %>
+        <% end %>
         <p>Welcome to my video editing portfolio. Here you can find some of my best work.</p>
         <p>Click on the links to find out about me.</p>
     </div>

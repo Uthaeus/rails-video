@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @user_check = User.count < 1
     @projects = Project.published.order("created_at DESC")
   end
 
