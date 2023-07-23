@@ -74,6 +74,8 @@ group :test do
   gem "webdrivers"
 end
 
+gem 'rack-cors'
+
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'petergate', '~> 3.0'
 gem 'carrierwave', '~> 2.2', '>= 2.2.3'

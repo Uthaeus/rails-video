@@ -1,7 +1,7 @@
 <div class='col'>
     <div class='item-card'>
-        <div class='item-card-image'>
-            <%= image_tag "#{project.thumbnail}", width: '100%', class: 'item-card-image' %>
+        <div class='item-image-wrapper'>
+            <%= image_tag("#{project.thumbnail}", width: '100%') %>
         </div>
         <div class='item-card-content text-end'>
             <h3><%= link_to project.title, project_path(project) %></h3>
